@@ -8,15 +8,15 @@ const cardValues = [
 	"8",
 	"9",
 	"10",
-	"J",
-	"Q",
-	"K",
-	"A",
+	"jack",
+	"queen",
+	"king",
+	"ace",
 ] as const;
 
 const suits = ["hearts", "diamonds", "spades", "clubs"] as const;
 
-const numericalValues = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, "A"] as const;
+const numericalValues = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, "ace"] as const;
 
 type CardValue = (typeof cardValues)[number];
 type Suit = (typeof suits)[number];
@@ -26,6 +26,7 @@ type Card = {
 	cardValue: CardValue;
 	suit: Suit;
 	numericalValue: NumericalValue;
+	sourceOfSvg: string;
 };
 
 export { cardValues, suits };
