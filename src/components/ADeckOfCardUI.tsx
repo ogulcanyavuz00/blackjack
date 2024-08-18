@@ -1,8 +1,8 @@
-import { randomizedADeckOfCards } from "@/cards/cards";
+import { deckOfCardsDescending } from "@/logic/totalDeckOfCards";
 import { IndividualCardUI } from "./IndividualCardUI";
 
 export function ADeckOfCardUI() {
-	return randomizedADeckOfCards.map((v) => (
+	return deckOfCardsDescending.map((v) => (
 		<IndividualCardUI
 			key={`${v.sourceOfSvg}`}
 			cardValue={v.cardValue}

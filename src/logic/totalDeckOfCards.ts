@@ -26,12 +26,7 @@ for (const cardValue of cardValues) {
 	}
 }
 
-const randomizedADeckOfCards = shuffleArray(aDeckOfCards);
+const deckOfCardsAtTheBeginningOfTheGame = shuffleArray(aDeckOfCards);
+const deckOfCardsDescending = [...deckOfCardsAtTheBeginningOfTheGame];
 
-// const cardStack = new Stack<Card>();
-
-// for (const card of randomizedADeckOfCards) {
-// 	cardStack.push(card);
-// }
-
-export { randomizedADeckOfCards };
+export { deckOfCardsDescending };
